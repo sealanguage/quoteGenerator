@@ -1,3 +1,5 @@
+/* global quote author */
+
 var getEmQuote = [{
 	"quote": "Knowledge speaks, but wisdom listens.",
 	"author": "Jimi Hendrix"
@@ -242,8 +244,42 @@ document.getElementById("getQuote").onclick = function() {
 	var random = Math.floor(Math.random() * getEmQuote.length);
 	console.log(random);
 	document.getElementById("quote").innerHTML = getEmQuote[random].quote;
+	console.log(quote);
 	document.getElementById("author").innerHTML = getEmQuote[random].author;
-}
+	console.log(author);
+	
+	
+	
+	document.getElementById("tweet").onclick = function () {
+	console.log("got tweet button");
+    document.getElementById("tweet").innerHTML = this.getQuote.quote;
+     //window.open('https://twitter.com/intent/tweet?text =' + '"' + document.getElementById("quote").innerHTML  + '"' + '-' +document.getElementById("author").innerHTML);
+	 
+	 //window.open('https://twitter.com/intent/tweet?text' = getEmQuote.quote id="quote";
+	 
+	 //get current value of id="quote"
+	 //get current value of id="author"
+		
+	};
+};
+
+
+
+
+
+
+
+// function postTweet () {
+// 	//find the text in the "quote" id
+// 	//post it into the twitter popup
+// 	//add the author if possible
+// 	console.log(good);
+// }
+
+
+// document.getElementById("tweet").onclick() = function() {
+// 	console.log("good");
+// }
 
 
 // getAvgGrade: function(classNum) {

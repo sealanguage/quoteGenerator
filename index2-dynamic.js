@@ -52,6 +52,10 @@ var randomQuote = "";
 // var radios = document.getElementByName("")
 
 //  not sure about this one
-document.getElementById("quoteButton").onsubmit = function(event) {
-    event.onclick
+// document.getElementById("quoteButton").onsubmit = function(event) {
+//     event.onclick
+// }
+
+document.getElementById("quoteButton").onclick = function () {
+    window.open('https://twitter.com/intent/tweet?text=' + '"' + qGenerator.quote + '"' + '-' +qGenerator.author);
 }
