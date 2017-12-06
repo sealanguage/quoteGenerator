@@ -248,12 +248,16 @@ document.getElementById("getQuote").onclick = function() {
 	document.getElementById("author").innerHTML = getEmQuote[random].author;
 	console.log(author);
 	
+	// 	function tweetBtn () {
+	// 	var tweetQuote = document.getElementById("postTwitter").innerHTML = this.getQuote.quote;
+	// 	var tweetAuthor = document.getElementById("postTwitter").innerHTML = this.getQuote.author;
+	// 	console.log(tweetBtn);
+	// }
 	
-	
-	document.getElementById("tweet").onclick = function () {
+	document.getElementById("postTwitter").onclick = function () {
 	console.log("got tweet button");
-    document.getElementById("tweet").innerHTML = this.getQuote.quote;
-     //window.open('https://twitter.com/intent/tweet?text =' + '"' + document.getElementById("quote").innerHTML  + '"' + '-' +document.getElementById("author").innerHTML);
+    //document.getElementById("postTwitter").innerHTML = this.quote;
+    window.open('https://twitter.com/intent/tweet?text=' + document.getElementById("quote").textContent + " " + " -" + document.getElementById("author").textContent);
 	 
 	 //window.open('https://twitter.com/intent/tweet?text' = getEmQuote.quote id="quote";
 	 
