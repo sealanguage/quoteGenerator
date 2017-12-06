@@ -248,18 +248,12 @@ document.getElementById("getQuote").onclick = function() {
 	document.getElementById("author").innerHTML = getEmQuote[random].author;
 	console.log(author);
 	
-	// 	function tweetBtn () {
-	// 	var tweetQuote = document.getElementById("postTwitter").innerHTML = this.getQuote.quote;
-	// 	var tweetAuthor = document.getElementById("postTwitter").innerHTML = this.getQuote.author;
-	// 	console.log(tweetBtn);
-	// }
+
 	
 	document.getElementById("postTwitter").onclick = function () {
 	console.log("got tweet button");
-    //document.getElementById("postTwitter").innerHTML = this.quote;
     window.open('https://twitter.com/intent/tweet?text=' + document.getElementById("quote").textContent + " " + " -" + document.getElementById("author").textContent);
 	 
-	 //window.open('https://twitter.com/intent/tweet?text' = getEmQuote.quote id="quote";
 	 
 	 //get current value of id="quote"
 	 //get current value of id="author"
@@ -272,28 +266,3 @@ document.getElementById("getQuote").onclick = function() {
 
 
 
-
-// function postTweet () {
-// 	//find the text in the "quote" id
-// 	//post it into the twitter popup
-// 	//add the author if possible
-// 	console.log(good);
-// }
-
-
-// document.getElementById("tweet").onclick() = function() {
-// 	console.log("good");
-// }
-
-
-// getAvgGrade: function(classNum) {
-//         // grab the students array from the class number given.
-//         var theStudents = this.classes[classNum].students; //fill out dot notation
-//         var total = 0
-//         for(var i = 0; i < theStudents.length; i++) {
-//             // we need to get the grade of each student. what Item do we use here?
-//             // console.log(theStudents[i].grade);
-//             total += theStudents[i].grade;
-//         }
-//         return total / theStudents.length;
-//     }
